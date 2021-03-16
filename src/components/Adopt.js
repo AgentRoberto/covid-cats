@@ -1,16 +1,19 @@
-import './App.css';
-import Header from './components/Header';
+import Header from './Header';
+import '../App.css';
+import Button from 'react-bootstrap/Button'
 
-function App() {
-  return (
-    <>
+function Adopt() {
+    return (
+        
+        <div className='background'>
+        <Header/>
 
+        <div className="btn-container">
+        <Button variant="outline-primary">Connect Web3</Button>{' '}
 
-    <div className='background'>
-      <Header></Header>
-      
-      <div className='panel'>
-        <h2>Why</h2>
+        </div>
+        <div className='panel'>
+        <h2>WHY</h2>
           <p>This project is an exploration of the ability to release tradable collectibles and record their ownership on the Ethereum blockchain. This feature of blockchain technology has been demonstrated by recent projects such as CryptoPunks. We have expanded on the idea and added a few novel, and what we think are exciting, features:</p>
        
         <h3>Mining off the chain</h3>
@@ -25,9 +28,8 @@ function App() {
           <p>MoonCats can be named, but they can only be named once. Owners have to decide whether they want to name their MoonCat or keep it unnamed. We think that this creates an interesting dynamic. Owners can leave their mark by being the first and only person to name a MoonCat. However, it is our guess that unnamed MoonCats will fetch a premium in the Adoption Center.</p>
       
       </div>
-      </div>
-    </>
-  );
+        </div>
+    )
 }
 
-export default App;
+export default Adopt
